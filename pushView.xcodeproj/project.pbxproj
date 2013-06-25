@@ -19,8 +19,6 @@
 		5ABEEC3217782F1200C6E781 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABEEC3117782F1200C6E781 /* SenTestingKit.framework */; };
 		5ABEEC3317782F1200C6E781 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABEEC1017782F1200C6E781 /* UIKit.framework */; };
 		5ABEEC3417782F1200C6E781 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABEEC1217782F1200C6E781 /* Foundation.framework */; };
-		5ABEEC3C17782F1200C6E781 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5ABEEC3A17782F1200C6E781 /* InfoPlist.strings */; };
-		5ABEEC3F17782F1200C6E781 /* pushViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABEEC3E17782F1200C6E781 /* pushViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +36,18 @@
 		5ABEEC1017782F1200C6E781 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5ABEEC1217782F1200C6E781 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5ABEEC1417782F1200C6E781 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5ABEEC1817782F1200C6E781 /* pushView-Info.plist */ = {isa = PBXFileReference; path = "pushView-Info.plist"; sourceTree = "<group>"; };
+		5ABEEC1817782F1200C6E781 /* pushView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pushView-Info.plist"; sourceTree = "<group>"; };
 		5ABEEC1A17782F1200C6E781 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5ABEEC1C17782F1200C6E781 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5ABEEC1E17782F1200C6E781 /* pushView-Prefix.pch */ = {isa = PBXFileReference; path = "pushView-Prefix.pch"; sourceTree = "<group>"; };
-		5ABEEC1F17782F1200C6E781 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5ABEEC1E17782F1200C6E781 /* pushView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pushView-Prefix.pch"; sourceTree = "<group>"; };
+		5ABEEC1F17782F1200C6E781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5ABEEC2017782F1200C6E781 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5ABEEC2217782F1200C6E781 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		5ABEEC2217782F1200C6E781 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5ABEEC2317782F1200C6E781 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5ABEEC2617782F1200C6E781 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		5ABEEC2917782F1200C6E781 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		5ABEEC3017782F1200C6E781 /* pushViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pushViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABEEC3117782F1200C6E781 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5ABEEC3917782F1200C6E781 /* pushViewTests-Info.plist */ = {isa = PBXFileReference; path = "pushViewTests-Info.plist"; sourceTree = "<group>"; };
-		5ABEEC3B17782F1200C6E781 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5ABEEC3D17782F1200C6E781 /* pushViewTests.h */ = {isa = PBXFileReference; path = pushViewTests.h; sourceTree = "<group>"; };
-		5ABEEC3E17782F1200C6E781 /* pushViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pushViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				5ABEEC1617782F1200C6E781 /* pushView */,
-				5ABEEC3717782F1200C6E781 /* pushViewTests */,
 				5ABEEC0F17782F1200C6E781 /* Frameworks */,
 				5ABEEC0D17782F1200C6E781 /* Products */,
 			);
@@ -131,25 +124,6 @@
 				5ABEEC1917782F1200C6E781 /* InfoPlist.strings */,
 				5ABEEC1C17782F1200C6E781 /* main.m */,
 				5ABEEC1E17782F1200C6E781 /* pushView-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5ABEEC3717782F1200C6E781 /* pushViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				5ABEEC3D17782F1200C6E781 /* pushViewTests.h */,
-				5ABEEC3E17782F1200C6E781 /* pushViewTests.m */,
-				5ABEEC3817782F1200C6E781 /* Supporting Files */,
-			);
-			path = pushViewTests;
-			sourceTree = "<group>";
-		};
-		5ABEEC3817782F1200C6E781 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5ABEEC3917782F1200C6E781 /* pushViewTests-Info.plist */,
-				5ABEEC3A17782F1200C6E781 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,7 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ABEEC3C17782F1200C6E781 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ABEEC3F17782F1200C6E781 /* pushViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +280,6 @@
 				5ABEEC2917782F1200C6E781 /* en */,
 			);
 			name = ViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		5ABEEC3A17782F1200C6E781 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5ABEEC3B17782F1200C6E781 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -443,6 +407,7 @@
 				5ABEEC4417782F1200C6E781 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ABEEC4517782F1200C6E781 /* Build configuration list for PBXNativeTarget "pushViewTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +416,7 @@
 				5ABEEC4717782F1200C6E781 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

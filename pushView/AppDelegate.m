@@ -25,9 +25,52 @@
         self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
     }
     self.window.rootViewController = self.viewController;
+    
     [self.window makeKeyAndVisible];
+    
+    //code for push message
+    //[[UIApplication sharedApplication]registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
+    //判断是否由远程消息通知触发应用程序启动
+    if([launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey]!=nil)
+    {
+        //获取应用程序消息通知标记数
+        int badge =[UIApplication sharedApplication].applicationIconBadgeNumber;
+        if(badge>0)
+        {
+          //如果应用程序消息通知标记数大于0，消除标记。
+            badge--;
+            //消除标记
+            [UIApplication sharedApplication].applicationIconBadgeNumber =badge;
+        }
+    }
+    //消息推送注册
+    [[UIApplication sharedApplication]registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeBadge)];
+    
+    
     return YES;
+    
+    
 }
+
+//加入2个代理方法
+-(void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    //NSString * token = [NSString stringWithFormat:@"%@",deviceToken];
+    NSLog(@"my token is:%@",deviceToken);
+}
+//获取终端设备标识，这个标识需要通过接口发送到服务器端，服务器端推送消息到APNS时需要知道终端的标识，APNS通过注册的终端标识找到终端设备。
+-(void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    //NSString *error_str =[NSString stringWithFormat:@"%@",error];
+    NSLog(@"failed to get token,error: %@",error);
+}
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(NSDictionary *)userInfo
+{
+    //在此处理接受到的消息。
+    NSLog(@"receive remote notification:%@",userInfo);
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
